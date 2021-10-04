@@ -1,0 +1,32 @@
+//The program is Coded By Basanta Chaudhary
+/*  wap to display lowercase convert into uppercase viceversa      */
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	char c[10], i;
+	printf("Enter any character:");
+
+	for (i = 1; i <= 10; i++)
+	{
+		scanf("%c", &c[i]);
+
+		if (c[i] >= 65 && c[i] <= 90)
+		{
+			c[i] += 32;
+			printf("%c", c[i]);
+		}
+		else if (c[i] >= 97 && c[i] <= 122)
+		{
+			c[i] -= 32;
+			printf("%c", c[i]);
+		}
+	
+		else if ((c[i] >= 1 && c[i] <= 60) || (c[i] >= 123 && c[i] <= 127))
+		{
+			printf("\ninvalid character!!");
+		}
+}	
+
+	return 0;
+}

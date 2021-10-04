@@ -1,0 +1,16 @@
+//The program is Coded By Basanta Chaudhary
+/* function with no arguement and no return value       */
+#include<stdio.h>
+#include<conio.h>
+int add(){
+	
+int a,b,sum;
+printf("Enter any two numbers:");
+scanf("%d%d",&a,&b);
+sum=a+b;
+printf("The sum of two numbers is:%d",sum);	
+}
+int main(){
+	add();
+	return 0;
+}

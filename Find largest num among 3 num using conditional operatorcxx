@@ -1,0 +1,14 @@
+//The program is Coded By Basanta Chaudhary
+/*  wap to find largest number among them Three numbers using Conditional operator      */
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int a, b, c, d;
+	printf("Enter any three numbers:");
+	scanf("%d%d%d%", &a, &b, &c);
+	d = (a > b && a > c) ? a : (b > c) ? b : c;
+	printf("The largest Number is :%d", d);
+
+	return 0;
+}
